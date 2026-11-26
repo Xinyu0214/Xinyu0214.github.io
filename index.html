@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Xinyu0214's notes on networking and distributed computing.">
+  <title>Xinyu0214 • Computing notes</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header><a class="name" href="#top">Xinyu0214</a><nav aria-label="Main navigation"><a href="#notes">Lab notes</a><a href="https://github.com/Xinyu0214">GitHub ↗</a></nav></header>
+  <main id="top">
+    <section class="intro"><p class="field">Networking &amp; distributed computing</p>
+      <h1>Inside the<br><em>packet stream.</em></h1>
+      <p class="lead">I’m Xinyu0214. I use small experiments to study what happens between a program sending data and another program receiving it.</p>
+    </section>
+    <section class="panel" aria-labelledby="trace-heading"><div class="panelhead"><h2 id="trace-heading">A frame in four pieces</h2><button id="play" type="button">Replay <span aria-hidden="true">↺</span></button></div>
+      <div class="route" id="route" aria-hidden="true"><span>Sender</span><div class="rail"><i></i><i></i><i></i><i></i></div><span>Receiver</span></div>
+      <p>Each dot represents part of a video frame. The receiver joins all four parts before decoding the image.</p></section>
+    <section id="notes" class="notes"><h2>Lab notes</h2>
+      <article><h3>Streaming a frame</h3><p>TCP gives the application a stream of bytes. A length header tells the receiver where one JPEG ends and the next begins.</p></article>
+      <article><h3>Counting across files</h3><p>A mapper emits one pair per word. Grouping equal keys lets a reducer add every occurrence, even when the same word appears in different files.</p></article>
+    </section></main>
+  <footer><span>Xinyu0214</span><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
